@@ -97,10 +97,10 @@ export const MenuItem = ({ title, url, active }) => {
     <li>
       <Link href={url}>
         <a
-          className={`text-orange-dark py-2 liant text-3xl border-b border-transparent${
+          className={`text-orange-dark py-2 liant text-3xl border-b border-transparent ${
             active === title
-              ? " border-orange-dark"
-              : " hover:border-orange-dark focus:border-orange-dark"
+              ? "border-orange-dark"
+              : "hover:border-orange-dark focus:border-orange-dark"
           }`}
           title={title}
         >

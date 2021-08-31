@@ -5,7 +5,7 @@ import { ContentContainer } from "../components/content"
 
 export default function Page() {
   return (
-    <BaseLayout active={"Brote"}>
+    <BaseLayout active={"Kontakt"}>
       <ContentContainer>
         <h1>Kontakt und Impressum</h1>
         <h2>Kontakt</h2>
