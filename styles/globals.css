@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Liant";
+    src: url("../assets/fonts/Liant-Bold.woff2") format("woff2"),
+      url("../assets/fonts/Liant-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Liant";
+    src: url("../assets/fonts/Liant-Medium.woff2") format("woff2"),
+      url("../assets/fonts/Liant-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Liant";
+    src: url("../assets/fonts/Liant-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Liant-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Exo";
+    src: url("../assets/fonts/Exo2-Light.woff2") format("woff2"),
+      url("../assets/fonts/Exo2-Light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Exo";
+    src: url("../assets/fonts/Exo2-Regular.woff2") format("woff2"),
+      url("../assets/fonts/Exo2-Regular.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  .liant {
+    font-family: "Liant";
+  }
+
+  h1 {
+    @apply text-4xl;
+    @apply text-center;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+
+  small {
+    @apply block;
+    @apply mt-2;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+  }
+
+  summary::-webkit-details-marker {
+    @apply hidden;
+  }
+
+  details .dropup-icon {
+    @apply hidden;
+  }
+
+  details[open] .dropdown-icon {
+    @apply hidden;
+  }
+
+  details[open] .dropup-icon {
+    @apply inline;
+  }
+}
+
+@layer utilities {
+  .-z-1 {
+    z-index: -1;
+  }
+  .text-shadow-white {
+    text-shadow: 0px 0px 3px #fff;
+  }
+  .footer-border {
+    @apply h-16;
+    @apply w-full;
+    @apply overflow-hidden;
+    @apply absolute;
+    @apply -z-1;
+    transform: translateY(-2rem);
+  }
+  .footer-border::before {
+    content: "";
+    @apply h-16;
+    width: 150%;
+    @apply bg-orange-dark;
+    @apply block;
+    border-radius: 50%;
+    transform: translateX(-15%);
+  }
+}
