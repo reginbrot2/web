@@ -1,4 +1,4 @@
-import { BaseLayout } from "../components/layout"
+import { BaseLayout, prefix } from "../components/layout"
 import { ContentContainer } from "../components/content"
 
 // import Image from "next/image";
@@ -16,8 +16,8 @@ export default function Home() {
           muted
           loop
         >
-          <source src="/reginbrot.webm" type="video/webm" />
-          <source src="/reginbrot.mp4" type="video/mp4" />
+          <source src={`${prefix}/reginbrot.webm`} type="video/webm" />
+          <source src={`${prefix}/reginbrot.mp4`} type="video/mp4" />
         </video>
       </div>
 

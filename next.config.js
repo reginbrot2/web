@@ -1,5 +1,6 @@
 module.exports = {
   basePath: "/web",
+  assetPrefix: "/web",
   reactStrictMode: true,
   async redirects() {
     return [

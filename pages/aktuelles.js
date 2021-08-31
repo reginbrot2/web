@@ -1,4 +1,4 @@
-import { BaseLayout } from "../components/layout"
+import { BaseLayout, prefix } from "../components/layout"
 import { ContentContainer } from "../components/content"
 // import Image from "next/image";
 
@@ -29,14 +29,22 @@ export default function Page() {
         </article>
         <article>
           <h2>Das Bürle im Akzent</h2>
-          <a href="/buerle_im_akzent.gif">
-            <img className="max-h-96" src="/buerle_im_akzent.gif" />
+          <a href={`${prefix}/buerle_im_akzent.gif`}>
+            <img
+              className="max-h-96"
+              src={`${prefix}/buerle_im_akzent.gif`}
+              alt="Reginbrot Bürle im Akzent"
+            />
           </a>
         </article>
         <article>
           <h2>Unser aktuelles Öko-Zertifikat</h2>
-          <a href="/oeko_zert.jpeg">
-            <img src="/oeko_zert.jpeg" />
+          <a href={`${prefix}/oeko_zert.jpeg`}>
+            <img
+              className="max-h-96"
+              src={`${prefix}/oeko_zert.jpeg`}
+              alt="Aktuelles Öko-Zertifikat unserer Bäckerei"
+            />
           </a>
         </article>
       </ContentContainer>

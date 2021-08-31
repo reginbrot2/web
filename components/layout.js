@@ -9,6 +9,8 @@ import {
 } from "@material-ui/icons"
 import { useState } from "react"
 
+export const prefix = "/web"
+
 export const BaseLayout = (props) => {
   return (
     <div className="flex flex-col min-h-screen">
@@ -38,7 +40,7 @@ export const Header = ({ active }) => {
           <Link href="/">
             <a title="Zur Starseite">
               <img
-                src="/reginbrot_100.png"
+                src={`${prefix}/reginbrot_100.png`}
                 height="80"
                 width="198"
                 alt="Reginbrot Logo"
