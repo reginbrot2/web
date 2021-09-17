@@ -1,6 +1,6 @@
 module.exports = {
-  basePath: "/",
-  assetPrefix: "/",
+  basePath: "",
+  assetPrefix: "",
   reactStrictMode: true,
   async redirects() {
     return [
