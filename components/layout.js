@@ -9,7 +9,7 @@ import {
 } from "@material-ui/icons"
 import { useState } from "react"
 
-export const prefix = "/web"
+export const prefix = ""
 
 export const BaseLayout = (props) => {
   return (
