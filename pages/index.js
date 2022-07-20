@@ -25,8 +25,8 @@ export default function Home() {
         <h2>Geöffnet fast wie immer</h2>
         <p>
           <strong>
-            Mo.-Fr. 9 - <span className="text-orange-dark">18:30</span> Uhr, Sa.
-            9 - <span className="text-orange-dark">15</span> Uhr
+            Mo.-Fr. 9 - <span className="text-orange-dark">19</span> Uhr, Sa. 9
+            - <span className="text-orange-dark">16</span> Uhr
           </strong>
         </p>
         <p>
